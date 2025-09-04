@@ -6,7 +6,7 @@
 /*   By: lluciani <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/23 15:52:53 by lluciani          #+#    #+#             */
-/*   Updated: 2025/06/23 15:52:57 by lluciani         ###   ########.fr       */
+/*   Updated: 2025/09/04 23:36:25 by rtodaro          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ long	get_current_time(void)
 	struct timeval	time;
 
 	if (gettimeofday(&time, NULL) == -1)
-		write(2, "gettimeofday error\n", 21);
+		write(2, "gettimeofday error\n", 20);
 	return (time.tv_sec * 1000 + time.tv_usec / 1000);
 }
 
